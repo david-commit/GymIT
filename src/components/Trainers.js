@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
+import { Link } from "react-router-dom"
 
 function Trainers() {
   const [trainers, setTrainers] = useState([]);
@@ -31,7 +32,9 @@ function Trainers() {
       <h1 className='trainers-heading'>Meet the Team</h1>
       <div className='trainers'>{mappedTrainers}</div>
       <div className='join-us'>
-        <button type='button'>JOIN THE TEAM</button>
+        <Link to="/join" >
+          <button type='button'>JOIN THE TEAM</button>
+        </Link>
       </div>
     </>
   );
