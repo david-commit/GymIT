@@ -13,7 +13,24 @@ function App() {
   console.log(page);
   return (
     <div>
-     
+      <BrowserRouter>
+        <NavBar onChangePage={setPage} />
+        <Switch>
+          <Route exact path='/contact'>
+            <Contact />
+          </Route>
+          <Route exact path='/trainers'>
+            <Trainers />
+          </Route>
+          <Route exact path='/join'>
+            <Join />
+          </Route>
+          <Route exact path='/'>
+            <MainBody />
+          </Route>
+        </Switch>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
