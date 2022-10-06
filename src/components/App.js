@@ -14,7 +14,7 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <NavBar onChangePage={setPage} />
+        <NavBar  />
         <Switch>
           <Route exact path='/contact'>
             <Contact />
