@@ -11,7 +11,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 function App() {
   const [page, setPage] = useState('/');
   const [trainers, setTrainers] = useState([]);
-  // const [newTrainer, setNewTrainer] = useState([]);
+  const [newTrainer, setNewTrainer] = useState([]);
 
   useEffect(() => {
     fetch('https://gymit-api.herokuapp.com/trainers')
@@ -20,32 +20,31 @@ function App() {
   }, []);
   console.log(page);
 
-  // function handleAddTrainer(addTrainer) {
-  //   setNewTrainer([...trainers, addTrainer]);
-  // }
-  // console.log(newTrainer)
+  function handleAddTrainer(addTrainer) {
+    setNewTrainer([...trainers, addTrainer]);
+  }
+  console.log(newTrainer)
 
   function handleSubmit(e) {
     e.preventDefault();
-    // const personalData = {
-    //   name: name,
-    //   title: title,
-    //   facebook: facebook,
-    //   linkedin: linkedin,
-    //   twitter: twitter,
-    //   pintrest: pintrest,
-    //   image: image,
-    //   description: description,
-    // };
-    // fetch('http://localhost:3000/trainers', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSON.stringify(personalData),
-    // })
-    //   .then((r) => r.json())
-    //   .then((data) => handleAddTrainer(data));
+    fetch('http://localhost:3000/trainers', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name: "name",
+        title: "title",
+        facebook: "facebook",
+        linkedin: "linkedin",
+        twitter: "twitter",
+        pintrest: "pintrest",
+        image: "image",
+        description: "description",
+      }),
+    })
+      .then((r) => r.json())
+      .then((data) => handleAddTrainer(data));
   }
 
   return (

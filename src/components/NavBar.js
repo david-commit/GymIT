@@ -13,26 +13,26 @@ function NavBar() {
         <nav className='nav'>
           <NavLink
             exact
-            to='/GymIT'
+            to='/GymIT/'
             className={({ isActive }) => (isActive ? 'link active' : 'link')}
           >
             Home
           </NavLink>
           <NavLink
             exact
-            to='/GymIT/trainers'
+            to='/GymIT/trainers/'
             className={({ isActive }) => (isActive ? 'link active' : 'link')}
           >
             Trainers
           </NavLink>
           <NavLink
-            to='/GymIT/join'
+            to='/GymIT/join/'
             className={({ isActive }) => (isActive ? 'link active' : 'link')}
           >
             Join Us
           </NavLink>
           <NavLink
-            to='/GymIT/contact'
+            to='/GymIT/contact/'
             exact
             className={({ isActive }) => (isActive ? 'link active' : 'link')}
           >
