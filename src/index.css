@@ -37,12 +37,21 @@ code {
   text-decoration: none;
   font-size: 20px;
 }
+.nav a:active{
+  color: orangered;
+}
+.nav a:hover{
+  color: orangered;
+  transform: scale(1.1);
+  transition: 300ms;
+}
 .logo {
   display: flex;
   margin: auto 0;
   align-items: center;
   font-size: 40px;
   font-weight: 500;
+  color: white;
 }
 .it {
   color: orangered;

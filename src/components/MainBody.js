@@ -89,7 +89,9 @@ function MainBody() {
               </p>
             </div>
           </div>
-          <button>Read More</button>
+          <Link to="/join">
+            <button>Join The Movement</button>
+          </Link>
         </div>
       </div>
       <div className='features'>

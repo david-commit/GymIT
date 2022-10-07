@@ -1,15 +1,8 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom"
 
-function Trainers() {
-  const [trainers, setTrainers] = useState([]);
+function Trainers({ trainers }) {
 
-  useEffect(() => {
-    fetch('http://localhost:3000/trainers')
-      .then((response) => response.json())
-      .then((data) => setTrainers(data));
-  }, []);
   console.log(trainers);
 
   const mappedTrainers = trainers.map((trainer) => {

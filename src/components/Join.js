@@ -17,13 +17,14 @@ function Join({ handleSubmit }) {
           name='facebook'
           id='facebook'
         />
+        S
         <input
           type='url'
           placeholder='Twitter handle'
           name='twitter'
           id='twitter'
         />
-        <input
+        <inputS
           type='url'
           placeholder='LinkedIn link'
           name='linkedin'
@@ -61,8 +62,9 @@ function Join({ handleSubmit }) {
           rows='10'
           placeholder='Write an introduction message..'
         ></textarea>
-
-        <button type='submit' onClick={() => handleSubmit()}>Submit Application</button>
+        <button type='submit' onClick={() => handleSubmit()}>
+          Submit Application
+        </button>
       </form>
     </div>
   );
