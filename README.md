@@ -33,7 +33,7 @@ GymIT is a react web application that assists fitness trainers a get jobs and at
 
 ## Live Demo Link
 
-[FAQs Page](https://david-commit.github.io/GymIT/)
+[GymIT App](https://david-commit.github.io/GymIT/)
 
 
 ## Getting Started
