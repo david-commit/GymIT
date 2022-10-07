@@ -17,7 +17,6 @@ function Join({ handleSubmit }) {
           name='facebook'
           id='facebook'
         />
-        S
         <input
           type='url'
           placeholder='Twitter handle'

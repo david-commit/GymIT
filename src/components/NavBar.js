@@ -5,7 +5,7 @@ function NavBar() {
   return (
     <div className='navbar-cont'>
       <div className='navbar'>
-        <Link to='/'>
+        <Link to='/GymIT'>
           <div className='logo'>
             Gym<span className='it'>IT</span>
           </div>
