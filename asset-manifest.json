@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/GymIT/static/css/main.209d5e0e.css",
-    "main.js": "/GymIT/static/js/main.52c207a1.js",
+    "main.js": "/GymIT/static/js/main.659bf430.js",
     "static/media/home-bg-3.jpg": "/GymIT/static/media/home-bg-3.3ff46c447ef2a3326b3c.jpg",
     "static/media/abs.png": "/GymIT/static/media/abs.f7cc92f42b5d016d63be.png",
     "static/media/blog-2.jpg": "/GymIT/static/media/blog-2.74d6dfaedb6bd1827fd9.jpg",
@@ -12,10 +12,10 @@
     "static/media/biceps.png": "/GymIT/static/media/biceps.5452cb765a6e13996712.png",
     "index.html": "/GymIT/index.html",
     "main.209d5e0e.css.map": "/GymIT/static/css/main.209d5e0e.css.map",
-    "main.52c207a1.js.map": "/GymIT/static/js/main.52c207a1.js.map"
+    "main.659bf430.js.map": "/GymIT/static/js/main.659bf430.js.map"
   },
   "entrypoints": [
     "static/css/main.209d5e0e.css",
-    "static/js/main.52c207a1.js"
+    "static/js/main.659bf430.js"
   ]
 }
