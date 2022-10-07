@@ -27,20 +27,20 @@ function App() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch('http://localhost:3000/trainers', {
+    fetch('https://gymit-api.herokuapp.com/trainers', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        name: "name",
-        title: "title",
-        facebook: "facebook",
-        linkedin: "linkedin",
-        twitter: "twitter",
-        pintrest: "pintrest",
-        image: "image",
-        description: "description",
+        name: 'name',
+        title: 'title',
+        facebook: 'facebook',
+        linkedin: 'linkedin',
+        twitter: 'twitter',
+        pintrest: 'pintrest',
+        image: 'image',
+        description: 'description',
       }),
     })
       .then((r) => r.json())
