@@ -14,7 +14,7 @@ function App() {
   // const [newTrainer, setNewTrainer] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/trainers')
+    fetch('https://gymit-api.herokuapp.com/trainers')
       .then((response) => response.json())
       .then((data) => setTrainers(data));
   }, []);
