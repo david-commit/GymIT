@@ -5,7 +5,7 @@ function NavBar() {
   return (
     <div className='navbar-cont'>
       <div className='navbar'>
-        <Link to="/">
+        <Link to='/'>
           <div className='logo'>
             Gym<span className='it'>IT</span>
           </div>
@@ -13,26 +13,26 @@ function NavBar() {
         <nav className='nav'>
           <NavLink
             exact
-            to='/'
+            to='/GymIT'
             className={({ isActive }) => (isActive ? 'link active' : 'link')}
           >
             Home
           </NavLink>
           <NavLink
             exact
-            to='/trainers'
+            to='/GymIT/trainers'
             className={({ isActive }) => (isActive ? 'link active' : 'link')}
           >
             Trainers
           </NavLink>
           <NavLink
-            to='/join'
+            to='/GymIT/join'
             className={({ isActive }) => (isActive ? 'link active' : 'link')}
           >
             Join Us
           </NavLink>
           <NavLink
-            to='/contact'
+            to='/GymIT/contact'
             exact
             className={({ isActive }) => (isActive ? 'link active' : 'link')}
           >

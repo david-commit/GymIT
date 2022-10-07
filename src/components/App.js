@@ -53,16 +53,16 @@ function App() {
       <BrowserRouter>
         <NavBar onChangePage={setPage} />
         <Switch>
-          <Route exact path='/contact'>
+          <Route exact path='/GymIT/contact'>
             <Contact />
           </Route>
-          <Route exact path='/trainers'>
+          <Route exact path='/GymIT/trainers'>
             <Trainers trainers={trainers} />
           </Route>
-          <Route path='/join'>
+          <Route path='/GymIT/join'>
             <Join handleSubmit={handleSubmit} />
           </Route>
-          <Route exact path='/'>
+          <Route exact path='/GymIT'>
             <MainBody />
           </Route>
         </Switch>
