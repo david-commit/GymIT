@@ -10,15 +10,15 @@ function Footer() {
           <h3>quick links</h3>
           <Link to='/'>Home</Link>
           <br />
-          <a href='#about'>About</a>
+          <Link to='/'>About</Link>
           <br />
-          <a href='#features'>Features</a>
+          <Link to='/trainers'>Trainers</Link>
           <br />
-          <a href='#pricing'>Pricing</a>
+          <Link to='/'>Pricing</Link>
           <br />
-          <a href='#trainers'>Trainers</a>
+          <Link to='/trainers'>Trainers</Link>
           <br />
-          <a href='#blogs'>Blogs</a>
+          <Link to='/'>Blogs</Link>
           <br />
         </div>
 

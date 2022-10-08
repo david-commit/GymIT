@@ -271,6 +271,8 @@ form button {
   color: orangered;
   cursor: pointer;
   transition-delay: 200ms;
+  transform: scale(1.2);
+  /* transition: all .3 ease; */
 }
 .join-us {
   display: flex;

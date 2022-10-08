@@ -21,7 +21,7 @@ function MainBody() {
             voluptatum, veritatis accusamus. Illo omnis harum corrupti?
           </p>{' '}
           <br />
-          <Link exact to='/GymIT/join'>
+          <Link exact to='/join'>
             <button type='button' id='sliderbody-cont-button'>
               JOIN US
             </button>
@@ -89,7 +89,7 @@ function MainBody() {
               </p>
             </div>
           </div>
-          <Link to='/GymIT/join'>
+          <Link to='/join'>
             <button>Join The Movement</button>
           </Link>
         </div>

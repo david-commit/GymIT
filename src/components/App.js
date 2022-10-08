@@ -11,7 +11,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 function App() {
   const [page, setPage] = useState('/');
   const [trainers, setTrainers] = useState([]);
-  const [newTrainer, setNewTrainer] = useState([]);
+  
 
   useEffect(() => {
     fetch('https://gymit-api.herokuapp.com/trainers')
@@ -20,48 +20,25 @@ function App() {
   }, []);
   console.log(page);
 
-  function handleAddTrainer(addTrainer) {
-    setNewTrainer([...trainers, addTrainer]);
-  }
-  console.log(newTrainer)
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    fetch('https://gymit-api.herokuapp.com/trainers', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        name: 'name',
-        title: 'title',
-        facebook: 'facebook',
-        linkedin: 'linkedin',
-        twitter: 'twitter',
-        pintrest: 'pintrest',
-        image: 'image',
-        description: 'description',
-      }),
-    })
-      .then((r) => r.json())
-      .then((data) => handleAddTrainer(data));
-  }
+
+ 
 
   return (
     <div>
       <BrowserRouter>
         <NavBar onChangePage={setPage} />
         <Switch>
-          <Route exact path='/GymIT/contact'>
+          <Route exact path='/contact'>
             <Contact />
           </Route>
-          <Route exact path='/GymIT/trainers'>
+          <Route exact path='/trainers'>
             <Trainers trainers={trainers} />
           </Route>
-          <Route path='/GymIT/join'>
-            <Join handleSubmit={handleSubmit} />
+          <Route path='/join'>
+            <Join  />
           </Route>
-          <Route exact path='/GymIT'>
+          <Route exact path='/'>
             <MainBody />
           </Route>
         </Switch>
